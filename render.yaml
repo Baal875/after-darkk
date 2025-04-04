@@ -9,4 +9,4 @@ services:
         value: "8000"
     regions:
       - "us"
-    plan: free  # You can change this to 'standard' or 'professional' depending on your needs
+    plan: free
