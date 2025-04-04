@@ -897,15 +897,15 @@
       console.log("WebSocket connected.");
     };
 
-ws.onmessage = (event) => {
-  try {
-    const data = JSON.parse(event.data);
-    document.getElementById("total-visits").textContent = data.totalVisits || 0;
-    document.getElementById("online-users").textContent = data.onlineUsers || 0;
-  } catch (error) {
-    console.error("Error parsing WebSocket data:", error);
-  }
-};
+    ws.onmessage = (event) => {
+      try {
+        const data = JSON.parse(event.data);
+        document.getElementById("total-visits").textContent = data.totalVisits || 0;
+        document.getElementById("online-users").textContent = data.onlineUsers || 0;
+      } catch (error) {
+        console.error("Error parsing WebSocket data:", error);
+      }
+    };
 
 
     ws.onclose = () => {
