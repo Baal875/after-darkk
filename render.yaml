@@ -8,6 +8,4 @@ services:
     envVars:
       - key: PORT
         value: "8000"
-    regions:
-      - us
     plan: free
